@@ -1,19 +1,19 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
 # Schema per la creazione di un utente (input)
 class UserCreate(BaseModel):
-    email: str
+    email: EmailStr
     username: str
     password: str
 
 class LoginRequest(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 # Schema per la visualizzazione di un utente (output)
 class UserResponse(BaseModel):
     id: int
-    email: str
+    email: EmailStr
     username: str
 
     class Config:

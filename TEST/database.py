@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Stringa connessione
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:1234@localhost:3306/loginpython"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:bnck028360@localhost:3306/loginpython"
 
 # Crea il motore (engine)
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
