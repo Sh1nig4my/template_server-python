@@ -25,8 +25,16 @@ pip install pydantic[email]
 #una libreria Python per garantire che i dati ricevuti dalle API siano corretti, in questo caso la Email.
 #In Java simile a Jakarta Validation, Spring Boot Validation o alcune annotazioni di Lombok come @Value o @Data
 
+pip install passlib[bcrypt]
+#una libreria Python per la gestione degli hash delle password. Supporta vari algoritmi di hashing, come bcrypt, PBKDF2, Argon2, e altri.
+#In Java simile a JBCrypt o Argon2-JVM.
+
 #Runnare il server
 uvicorn main:app --reload  
+
+#Troubleshooting
+#Spesso abbiamo notato che mancano alcune componenti installate con i comandi pip, tra le più comuni la cryptography, usa questo comando per installarla:
+pip install cryptography
 
 #Swagger
 http://127.0.0.1:8000/docs
