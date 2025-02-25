@@ -1,11 +1,15 @@
 ##PYTHON##
 
-#Pacchetti da installare
+#TODO installazione python locale. (Possibilmente LTS).
+https://www.python.org/downloads/
+
+#TODO aggiugnere spiegazione ogni import
+#Pacchetti da installare 
 pip install fastapi
 pip install uvicorn
 pip install sqlalchemy
 pip install pymysql
-pip install pydantic[email] #OPZIONALE
+pip install pydantic[email] 
 
 #Runnare il server
 uvicorn main:app --reload  
@@ -16,7 +20,7 @@ http://127.0.0.1:8000/docs
 #Architettura
 project/
 ├── main.py
-├── database.py         # Configurazione del DB (engine, session, get_db)
+├── database.py         # Configurazione del DB (engine, session, get_db) 
 ├── models/
 │   └── user.py         # Modello ORM (SQLAlchemy)
 ├── schemas/
